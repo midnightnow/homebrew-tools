@@ -2,7 +2,7 @@ class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://github.com/midnightnow/claude-code-tools"
   url "https://github.com/midnightnow/claude-code-tools/releases/download/v1.0.0-beta/macagent-v1.0.0-beta-darwin-arm64.tar.gz"
-  sha256 "d936ed4d637b5fe233b74f424ab82ab0cdf1b2a87d4456111ec0c997c258fb83"
+  sha256 "1896099c86d9615b9cbedb891b0d6d55b653dd4d166505223dcdf67f60ede4d0"
   version "1.0.0-beta"
   license "MIT"
 
