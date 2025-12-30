@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://cdn.macagent.pro/bin/v1.2.1/macagent-v1.2.1-darwin-arm64.tar.gz"
-  sha256 "fc5042da9155a1e3db19fed4ec5c3b7347e2b041edf8db7bef1666c953775af5"
-  version "1.2.1"
+  url "https://github.com/midnightnow/macagent/releases/download/v1.2.3/macagent-v1.2.3-darwin-arm64.tar.gz"
+  sha256 "88d58e6fbc1f53e60d65dc57bb94f424b96c9194d9e54479542baa5a329d8e71"
+  version "1.2.3"
   license "MIT"
 
   depends_on :macos
@@ -15,7 +15,11 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.1
+      MacAgent v1.2.3 "Zombie Brain Fix"
+
+      Changes:
+        - Fixed: Auto-start local AI (Ollama) if not running
+        - Fixed: Version banner accuracy
 
       Quick start:
         macagent status        # Check system + LLM readiness
