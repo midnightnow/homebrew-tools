@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://cdn.macagent.pro/bin/v1.2.1/macagent-v1.2.1-darwin-arm64.tar.gz"
-  sha256 "43132807c18cecb20698342e9a99fa8fdcc44d52b36b737bf3b6891e694c57e9"
-  version "1.2.1"
+  url "https://github.com/midnightnow/macagent/releases/download/v1.2.4/macagent-v1.2.4-darwin-arm64.tar.gz"
+  sha256 "95107e4dd6fc29266c64a0f67ca3989e1ce450f7ed2f58715936de0e1a12327a"
+  version "1.2.4"
   license "MIT"
 
   depends_on :macos
@@ -15,12 +15,7 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.1 "The Fulcrum Release"
-
-      What's Fixed:
-        ✅ Startup crash resolved (unified provider import)
-        ✅ Config now bundled (no more "file not found")
-        ✅ Self-sovereign binary (31MB optimized)
+      MacAgent v1.2.4
 
       Quick start:
         macagent status        # Check system + LLM readiness
