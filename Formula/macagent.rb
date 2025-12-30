@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://github.com/midnightnow/macagent/releases/download/v1.2.4/macagent-v1.2.4-darwin-arm64.tar.gz"
-  sha256 "95107e4dd6fc29266c64a0f67ca3989e1ce450f7ed2f58715936de0e1a12327a"
-  version "1.2.4"
+  url "https://github.com/midnightnow/macagent/releases/download/v1.2.5/macagent-v1.2.5-darwin-arm64.tar.gz"
+  sha256 "13d00b288053dcd53468e0017c3f51b26e27f1a858251d41a8e2cc047b267276"
+  version "1.2.5"
   license "MIT"
 
   depends_on :macos
@@ -15,11 +15,11 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.4
+      MacAgent v1.2.5 (Lean Machine)
 
       Quick start:
+        macagent               # Interactive AI chat & Helper
         macagent status        # Check system + LLM readiness
-        macagent chat "..."    # Interactive AI chat
         macagent --help        # Full command reference
 
       For local AI (optional):
