@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://github.com/midnightnow/macagent/releases/download/v1.2.2/macagent-v1.2.2-darwin-arm64.tar.gz"
-  sha256 "3df142adc18afe227e48b16f11fbe1e5778a0eb50bd70977078ba547fe26f590"
-  version "1.2.2"
+  url "https://cdn.macagent.pro/bin/v1.2.1/macagent-v1.2.1-darwin-arm64.tar.gz"
+  sha256 "fc5042da9155a1e3db19fed4ec5c3b7347e2b041edf8db7bef1666c953775af5"
+  version "1.2.1"
   license "MIT"
 
   depends_on :macos
@@ -15,21 +15,15 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.2 - "Zombie Brain Fix"
-
-      What's Fixed:
-        * Graceful error when no AI backend available
-        * Helpful "Install Ollama" message instead of crash
-        * Circuit breaker improvements
+      MacAgent v1.2.1 - "The Fulcrum Release"
 
       Quick start:
         macagent status        # Check system + LLM readiness
         macagent chat "..."    # Interactive AI chat
         macagent --help        # Full command reference
 
-      For local AI (required):
-        brew install ollama && ollama serve
-        ollama pull llama3.2:1b
+      For local AI (optional):
+        brew install ollama && ollama run llama3.2
 
       Documentation: https://macagent.pro
     EOS
