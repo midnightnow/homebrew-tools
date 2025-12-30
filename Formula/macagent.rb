@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent-pro.web.app"
-  url "https://github.com/midnightnow/macagent/releases/download/v1.2.0/macagent-v1.2.0-darwin-arm64.tar.gz"
-  sha256 "fedbac1f773143a1df7385f8247a31799de81b024bc0eb831246f030b2e6a1ba"
-  version "1.2.0"
+  url "https://github.com/midnightnow/macagent/releases/download/v1.2.1/macagent-v1.2.1-darwin-arm64.tar.gz"
+  sha256 "cf3904031ba6592bc055baa932f321a6e6c151e7a466bba54d922ab09e2faead"
+  version "1.2.1"
   license "MIT"
 
   depends_on :macos
@@ -15,7 +15,7 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent Pro v1.2.0 installed!
+      MacAgent Pro v1.2.1 installed!
 
       Quick start:
         macagent status        # Check system readiness
