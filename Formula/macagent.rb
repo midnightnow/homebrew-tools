@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
-  homepage "https://github.com/midnightnow/claude-code-tools"
-  url "https://github.com/midnightnow/claude-code-tools/releases/download/v1.0.0-beta/macagent-v1.0.0-beta-darwin-arm64.tar.gz"
-  sha256 "1896099c86d9615b9cbedb891b0d6d55b653dd4d166505223dcdf67f60ede4d0"
-  version "1.0.0-beta"
+  homepage "https://macagent-pro.web.app"
+  url "https://github.com/midnightnow/macagent/releases/download/v1.2.0/macagent-v1.2.0-darwin-arm64.tar.gz"
+  sha256 "fedbac1f773143a1df7385f8247a31799de81b024bc0eb831246f030b2e6a1ba"
+  version "1.2.0"
   license "MIT"
 
   depends_on :macos
@@ -11,31 +11,29 @@ class Macagent < Formula
 
   def install
     bin.install "macagent"
-    libexec.install "daemon.py"
-    libexec.install "config"
-    libexec.install "plugins"
-    
-    # Create wrapper for daemon
-    (bin/"macagent-daemon").write <<~EOS
-      #!/bin/bash
-      python3 "#{libexec}/daemon.py" "$@"
-    EOS
   end
 
   def caveats
     <<~EOS
-      For instant startup, run the daemon:
-        macagent-daemon start
+      MacAgent Pro v1.2.0 "Forge & Flow" installed!
 
-      Check status:
-        macagent-daemon status
+      Quick start:
+        macagent status        # Check system readiness
+        macagent see "..."     # Vision analysis
+        macagent plan "..."    # Task planning
+        macagent --help        # Full command reference
 
-      Then use macagent normally:
-        macagent
+      Hardware-aware features:
+        - Thermal monitoring (throttles on high temp)
+        - Battery optimization (adjusts on low power)
+        - Memory management (adapts to available RAM)
+        - Offline mode (works without internet)
+
+      Documentation: https://macagent-pro.web.app
     EOS
   end
 
   test do
-    assert_match "MacAgent Pro", shell_output("#{bin}/macagent --help 2>&1", 0)
+    assert_match "macagent", shell_output("#{bin}/macagent --help 2>&1", 2)
   end
 end
