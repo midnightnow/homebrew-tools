@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://github.com/midnightnow/macagent/releases/download/v1.2.5/macagent-v1.2.5-darwin-arm64.tar.gz"
-  sha256 "13d00b288053dcd53468e0017c3f51b26e27f1a858251d41a8e2cc047b267276"
-  version "1.2.5"
+  url "https://github.com/midnightnow/macagent/releases/download/v1.2.3/macagent-v1.2.3-darwin-arm64.tar.gz"
+  sha256 "d75179299e400c646caf391cc8acec020455f7855570e2554e893d1d84d0052c"
+  version "1.2.3"
   license "MIT"
 
   depends_on :macos
@@ -15,15 +15,21 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.5 (Lean Machine)
+      MacAgent v1.2.3 - "Slim & Auto-Start"
+
+      What's New:
+        * 15x smaller (21MB vs 325MB)
+        * Auto-starts Ollama when needed
+        * Faster startup
 
       Quick start:
-        macagent               # Interactive AI chat & Helper
         macagent status        # Check system + LLM readiness
+        macagent chat "..."    # Interactive AI chat
         macagent --help        # Full command reference
 
-      For local AI (optional):
-        brew install ollama && ollama run llama3.2
+      For local AI:
+        brew install ollama
+        ollama pull llama3.2:1b
 
       Documentation: https://macagent.pro
     EOS
