@@ -1,7 +1,7 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://github.com/midnightnow/macagent-pro/releases/download/v1.2.7/macagent-v1.2.7-rev4-darwin-arm64.tar.gz"
+  url "https://cdn.macagent.pro/macagent-v1.2.7-rev4-darwin-arm64.tar.gz"
   sha256 "8a580a6976ca82fab7ad6d6f0ff5f36785c3e1ea27c63f4338a16fbbc0cff208"
   version "1.2.7"
   license "MIT"
