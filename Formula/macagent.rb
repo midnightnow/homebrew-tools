@@ -1,8 +1,8 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://github.com/midnightnow/macagent/releases/download/v1.2.7/macagent-v1.2.7-darwin-arm64.tar.gz"
-  sha256 "a6c11711c26dff8ee0ea3286a4fc86ece274009150b48e018ecb745259c53008"
+  url "https://cdn.macagent.pro/bin/v1.2.7/macagent-v1.2.7-darwin-arm64.tar.gz"
+  sha256 "bc1e2b292323a9d84d598741ea40b60dcfe9c4753e30ef82aa94c853937293ec"
   version "1.2.7"
   license "MIT"
 
@@ -15,12 +15,25 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.7
+      MacAgent v1.2.7 "The Soul"
+
+      What's New:
+        ✅ Claude DNA Personality - Warm, patient, empathetic responses
+        ✅ Verbosity Control - /personality terse|balanced|verbose
+        ✅ Engineer Mode - Auto-detects coding tasks, outputs code directly
+        ✅ Anti-Robot Filter - Scrubs "As an AI language model..." artifacts
+        ✅ Persistent Settings - Preferences saved between sessions
 
       Quick start:
-        macagent status        # Check system + LLM readiness
-        macagent              # Interactive mode
-        macagent --help       # Full command reference
+        macagent                   # Interactive mode
+        macagent status            # System + LLM readiness
+        macagent --help            # Full command reference
+
+      Personality Commands:
+        /personality               # Show current settings
+        /personality terse         # Short, direct responses
+        /personality friendly      # Warm, engaging
+        /personality professional  # Formal, efficient
 
       For local AI (optional):
         brew install ollama && ollama run llama3.2
