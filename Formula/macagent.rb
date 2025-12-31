@@ -1,8 +1,8 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://cdn.macagent.pro/macagent-v1.2.7-rev4-darwin-arm64.tar.gz"
-  sha256 "8a580a6976ca82fab7ad6d6f0ff5f36785c3e1ea27c63f4338a16fbbc0cff208"
+  url "https://cdn.macagent.pro/bin/v1.2.7/macagent-v1.2.7-darwin-arm64.tar.gz"
+  sha256 "0699fdbba389bfde95a431818bec9490ee53b1bab3ebc350dddcd433b9f0941b"
   version "1.2.7"
   license "MIT"
 
@@ -15,10 +15,10 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.7 "The Soul" (Lean Edition)
+      MacAgent v1.2.7 "The Soul" (NYE 2025 Build)
 
       What's New:
-        ✅ 21MB Optimized Binary (was 244MB)
+        ✅ 86MB Optimized Binary (stripped)
         ✅ Claude DNA Personality - Warm, patient, empathetic responses
         ✅ Verbosity Control - /personality terse|balanced|verbose
         ✅ Engineer Mode - Auto-detects coding tasks, outputs code directly
