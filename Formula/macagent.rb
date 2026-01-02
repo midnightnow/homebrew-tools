@@ -1,9 +1,9 @@
 class Macagent < Formula
   desc "Hardware-Aware macOS Agent - Local-first AI that runs directly on your Mac"
   homepage "https://macagent.pro"
-  url "https://cdn.macagent.pro/bin/v1.2.7/macagent-v1.2.7-darwin-arm64.tar.gz"
-  sha256 "0699fdbba389bfde95a431818bec9490ee53b1bab3ebc350dddcd433b9f0941b"
-  version "1.2.7"
+  url "https://cdn.macagent.pro/bin/v2.2.0/macagent-v2.2.0-darwin-arm64.tar.gz"
+  sha256 "1ed94c13c1ef0654ada2aba9e67355bc1b8761913d8efca045fd8b20628c6afd"
+  version "2.2.0"
   license "MIT"
 
   depends_on :macos
@@ -15,15 +15,15 @@ class Macagent < Formula
 
   def caveats
     <<~EOS
-      MacAgent v1.2.7 "The Soul" (NYE 2025 Build)
+      MacAgent v2.2.0 "Iron Sentinel" (Security Build)
 
       What's New:
-        ✅ 86MB Optimized Binary (stripped)
-        ✅ Claude DNA Personality - Warm, patient, empathetic responses
-        ✅ Verbosity Control - /personality terse|balanced|verbose
-        ✅ Engineer Mode - Auto-detects coding tasks, outputs code directly
-        ✅ Anti-Robot Filter - Scrubs "As an AI language model..." artifacts
-        ✅ Persistent Settings - Preferences saved between sessions
+        🛡️ Operation Iron Sentinel - Full Security Hardening
+        🛡️ Workspace Containment - Defenses against path traversal
+        🛡️ RCE Protection - AST validation for generated code
+        🛡️ Circuit Breaker - Rate limiting for autonomous repairs
+        ✅ Human-in-the-Loop - Confirmation required for risky edits
+
 
       Quick start:
         macagent                   # Interactive mode
